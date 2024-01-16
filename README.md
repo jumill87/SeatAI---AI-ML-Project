@@ -1,7 +1,6 @@
 Video of demonstration (not final):
 
-![image](https://www.youtube.com/embed/_XZ2B6XFHtc)
-
+[![IMAGE SeatAI](https://img.youtube.com/vi/_XZ2B6XFHtc/0.jpg)](https://www.youtube.com/shorts/_XZ2B6XFHtc)
 
 CSULB – College of Engineering
 Computer Engineering
