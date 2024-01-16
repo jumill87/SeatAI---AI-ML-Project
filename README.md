@@ -155,9 +155,11 @@ easily reducing costs by only having one unit (monitoring system) per room etc.
 
 Hardware Design Overview:
 Our Jetson Nano (Outside of Case):
+
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/0949da7e-6c06-4c86-b433-2a2fbfd7cfea)
 
 Overview Block Diagram of Jetson Nano AI System:
+
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/1de39057-9bfa-4102-94bd-8242dca1fa78)
 
 We will use a similar hardware schematic like the picture above. Our version will have the NVIDIA
@@ -171,9 +173,11 @@ remotely via HDMI monitor or VNC viewer.
 The Jetson Nano also comes with plenty of GPIO pins for more equipment and extra NVIDIA TX
 CUDA modules (more ram and data processing power, think of it as an extra memory stick).
 Occupancy Detection Routes:
+
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/2d831404-5835-4184-9833-ccdd705852e2)
 
 Object Detection Sample:
+
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/ccbb42cd-428b-4446-a552-1c1331e75ec7)
 
 Web Application Design Overview:
@@ -191,6 +195,7 @@ diagram that corresponds to the chairs that are tracked by the Jetson Nano. When
 update in the occupancy of a chair, the image will be altered to display that information by changing the
 color of the seat, with red being occupied, and blue being unoccupied
 Example of the Web Application’s Seating Diagram:
+
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/b48b4e0d-95a0-4309-ac98-8a440a9041b9)
 
 
@@ -228,6 +233,7 @@ our system, or our video feed and data transfer will be crippled.
 
 Technical Data:
 Picture of FPGA/AI Kit:
+
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/d41317b7-d561-48ad-a78f-4e22c14fd049)
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/702b153c-db37-4190-b010-6e5bcb6972eb)
 
@@ -243,9 +249,11 @@ This is what our final product will look like. For our design we will only be im
 camera, the picture below shows a CSI camera. The case makes it easy to mount to a ceiling or easy to
 place anywhere and keeps all our hardware safe inside the case.
 Jetson Nano’s (JetPack 4.6) Linux Environment:
+
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/0fb94914-ff46-4273-9095-c5e36d09b1dc)
 
 Our Completed Jetson Nano 2GB AI Detection Device:
+
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/ea767554-49fc-4e25-90f0-55ad5403ec4c)
 
 
@@ -260,6 +268,7 @@ which is a Boolean value that is 0 or “False” for an empty chair, and 1 or �
 of now, the values are only updated when changed by the administrator of the database, but once the
 Nano’s recognition algorithms are set to monitor the occupation of chairs, it will be able to alter this value
 on its own for each respective chair.
+
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/15222a3e-b1be-4f28-bb02-35947c868c3b)
 
 Django:
@@ -270,6 +279,7 @@ Django offers the ability for websites to have tables that are much like that of
 easily done with the template provided by Django, as their “models.py” file holds the different objects
 that are needed, which in this case is just the chair objects. Again, just like in the database, this object
 holds two values: the integer identification number and the Boolean status value.
+
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/4097fe28-788b-4cb7-8094-a5c0f96e5207)
 
 
@@ -280,6 +290,7 @@ basic framework of the website is completed, Django offers the ability to change
 table it currently holds called “Chairs,” which is the one that was set within the code. As well, there are
 “Authentication and Authorization” abilities, which we are not implementing at the current time, but are
 something we will consider once the base project is completed.
+
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/d1cc62d6-5a6f-4c8e-b0bb-a5d53fecae46)
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/3472bbfe-014c-44a8-81a7-4a848918ed54)
 
@@ -289,6 +300,7 @@ By clicking on the “Chairs” table, we can see the objects currently residing
 they are the three chairs, just like in the MySQL database, that we will be using for testing the Nano.
 Because Django makes it so simple to create these tables, it should be very simple to connect these
 mirroring values with those in the database, allowing them to be updated in tandem with one another.
+
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/b33fc862-33ab-4714-8fda-fee86a98fa9a)
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/8dd77f43-7a92-47d3-86c0-ef81c5d33bbd)
 
@@ -299,6 +311,7 @@ testing the communication between the database and the website. Once testing is 
 this page will be replaced with a seating diagram that matches the monitored room, and the “Occupation
 Status” will be represented on the image by the color of the seat. However, this prototype will do just fine
 while the testing of the Nano’s AI recognition system commences.
+
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/aba4fe0d-80b1-45e9-9337-18cb38fa487f)
 
 
@@ -323,16 +336,20 @@ want detected and then inputting them into our neural network for machine learni
 take us the longest, having to document and take pictures from every angle to make sure our object
 recognition is as accurate as possible.
 Potential Libraries:
+
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/d8e3e86a-4882-4578-918b-855d9306596a)
 
 Coding examples:
+
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/018836be-377a-4425-914a-14dd57d1bbd3)
 
 Software & Hardware Tools Utilized:
 Software:
+
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/16ef0fd6-b7c9-47c4-9db0-015dfe9528de)
 
 Hardware:
+
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/e06199b6-1f22-44c1-83be-1c5160d8acb8)
 
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/65efaeb0-2632-418d-85c9-76c568c5c317)
@@ -350,6 +367,7 @@ beginning of the school year to the end. We will work an estimated 38 weeks (abo
 half months) which comes out to 228 hours (about 1 and a half weeks) total.
 
 Total Parts List for Research/Testing/Project Supplies:
+
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/4af04fae-d520-4150-84f5-d1c35390d67c)
 
 
@@ -359,6 +377,7 @@ https://time.graphics/line/591531
 Planned vs Actual Timeline
 Green = Planned Time
 Orange = Actual Time
+
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/8f55cb2c-91db-44de-8964-ce1a5ffd8038)
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/7584e49c-08e0-4919-8b28-198c8696a75c)
 ![image](https://github.com/jumill87/SeatAI---AI-ML-Project/assets/65310185/2d10046f-9643-4f5e-af63-7fd22edcd1c9)
