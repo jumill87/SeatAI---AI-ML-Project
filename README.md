@@ -1,13 +1,13 @@
-Video of demonstration (not final)
-<iframe width="399" height="710" src="https://www.youtube.com/embed/_XZ2B6XFHtc" title="490B Team SeatAI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+Video of demonstration (not final):
 
+![image](https://www.youtube.com/embed/_XZ2B6XFHtc)
 
 
 CSULB – College of Engineering
 Computer Engineering
 
 Senior Design Project
-Group 10 – Seat Taken
+Group 10 – SeatAI
 Team Members:
 -Daniel Lee
 -Andrew Jordan Gaspar
