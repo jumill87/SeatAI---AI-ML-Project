@@ -1,3 +1,8 @@
+Video of demonstration (not final)
+<iframe width="399" height="710" src="https://www.youtube.com/embed/_XZ2B6XFHtc" title="490B Team SeatAI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
 CSULB – College of Engineering
 Computer Engineering
 
